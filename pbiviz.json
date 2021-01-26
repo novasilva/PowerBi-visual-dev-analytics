@@ -1,0 +1,28 @@
+{
+    "visual":
+    {
+        "name":"devVisual",
+        "displayName":"devVisual",
+        "guid":"devVisual56B97BC751EC406293DC490B57E2CEAE",
+        "visualClassName":"Visual",
+        "version":"1.0.0",
+        "description":"Development Visual",
+        "supportUrl":"https://visuals.novasilva.com",
+        "gitHubUrl":""
+    },
+    "apiVersion":"3.4.0",
+    "author":
+    {
+        "name":"Nova Silva BV",
+        "email":"info@novasilva.com"
+    },
+    "assets":
+    {
+        "icon":"assets/icon.png"
+    },
+    "externalJS":[],
+    "style":"style/visual.less",
+    "capabilities":"capabilities.json",
+    "dependencies":null,
+    "stringResources":[]
+}

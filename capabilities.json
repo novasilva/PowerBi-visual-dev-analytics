@@ -1,0 +1,126 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category Data",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Value Data",
+            "name": "values",
+            "kind": "Measure"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {}
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "values"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "objects": {
+        "dataPoint": {
+            "displayName": "Data colors",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Default color",
+                    "displayNameKey": "Visual_DefaultColor",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "constantLine": {
+            "displayName": "Constant line",
+            "displayNameKey": "Visual_Constant_Line",
+            "description": "Draw a constant line",
+            "descriptionKey": "Visual_Description_Key",
+            "objectCategory": 2,
+            "properties": {
+                "show": {
+                    "displayName": "Show",
+                    "displayNameKey": "Visual_Show",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "displayName": {
+                    "displayName": "Display name",
+                    "displayNameKey": "Visual_DisplayName",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "value": {
+                    "displayName": "Value",
+                    "displayNameKey": "Visual_Value",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "lineColor": {
+                    "displayName": "Line color",
+                    "displayNameKey": "Visual_LineColor",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color":true
+                            }
+                        }
+                    }
+                },
+                "lineStyle": {
+                    "displayName": "Line style",
+                    "displayNameKey": "Visual_LineStyle",
+                    "type": {
+                        "enumeration": [
+                            {
+                                "value": "dashed",
+                                "displayName": "Dashed",
+                                "displayNameKey": "Visual_Style_Dashed"
+                            },
+                            {
+                                "value": "solid",
+                                "displayName": "Solid",
+                                "displayNameKey": "Visual_Style_Solid"
+                            },
+                            {
+                                "value": "dotted",
+                                "displayName": "Dotted",
+                                "displayNameKey": "Visual_Style_Dotted"
+                            }
+                        ]
+                    }                    
+                },
+                "strokeWidth": {
+                    "displayName": "Line thickness",
+                    "displayNameKey": "Visual_LineThickness",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    }
+}
