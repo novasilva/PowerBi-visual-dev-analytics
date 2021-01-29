@@ -146,8 +146,6 @@ export class Visual implements IVisual {
         if (options.objectName === "constantLine") {
             this.enumerateConstantLine(instanceEnumeration)
         }
-        console.log("enumerateObjectInstances: ");
-        console.log(VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options))
         return VisualSettings.enumerateObjectInstances(this.settings || VisualSettings.getDefault(), options);
     }
 
